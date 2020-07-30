@@ -5,8 +5,8 @@ WORKDIR /home
 # COMMON BUILD TOOLS
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y -q --no-install-recommends build-essential autoconf make git wget pciutils cpio libtool lsb-release ca-certificates pkg-config bison flex libcurl4-gnutls-dev zlib1g-dev
 
-RUN git config --global http.proxy ${http_proxy}
-RUN git config --global https.proxy ${https_proxy}
+# RUN git config --global http.proxy ${http_proxy}
+# RUN git config --global https.proxy ${https_proxy}
 
 # Install cmake
 ARG CMAKE_VER=3.13.1
