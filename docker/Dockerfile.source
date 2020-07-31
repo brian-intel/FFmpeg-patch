@@ -377,8 +377,7 @@ RUN git clone -b ${DLDT_VER} ${DLDT_REPO} && \
     make -j $(nproc) && \
     rm -rf ../bin/intel64/Release/lib/libgtest* && \
     rm -rf ../bin/intel64/Release/lib/libgmock* && \
-    rm -rf ../bin/intel64/Release/lib/libmock* && \
-    rm -rf ../bin/intel64/Release/lib/libtest*
+    rm -rf ../bin/intel64/Release/lib/libmock* 
 
 ARG libdir=/opt/intel/dldt/inference-engine/lib/intel64
 
